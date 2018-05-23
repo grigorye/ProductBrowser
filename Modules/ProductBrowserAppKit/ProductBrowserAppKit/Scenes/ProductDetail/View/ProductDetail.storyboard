@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kWD-RF-vhu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product Detail View Controller-->
+        <scene sceneID="ZM3-bQ-wEf">
+            <objects>
+                <viewController id="kWD-RF-vhu" customClass="ProductDetailViewController" customModule="ProductBrowserAppKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HHR-LN-CAP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JDl-fF-Dva">
+                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JDl-fF-Dva" secondAttribute="height" multiplier="1:1" id="7DU-bR-API"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JDl-fF-Dva" firstAttribute="top" secondItem="6oZ-ds-YeZ" secondAttribute="top" id="ZSA-Mo-ecJ"/>
+                            <constraint firstItem="JDl-fF-Dva" firstAttribute="trailing" secondItem="6oZ-ds-YeZ" secondAttribute="trailing" id="eNt-mg-b6d"/>
+                            <constraint firstItem="JDl-fF-Dva" firstAttribute="leading" secondItem="6oZ-ds-YeZ" secondAttribute="leading" id="o4Q-zQ-eh8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6oZ-ds-YeZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="_imageView" destination="JDl-fF-Dva" id="UdY-EZ-am6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rqm-hE-kv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2714.4000000000001" y="126.38680659670166"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,14 @@
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - bundle install
+    - bundle exec pod repo update
+    - bundle exec pod install
+    - xcodebuild -sdk iphonesimulator -workspace ProductBrowser.xcworkspace -scheme ProductBrowserApp -destination 'platform=iOS Simulator,name=iPhone X,OS=11.3' -enableCodeCoverage YES clean test | bundle exec xcpretty
+  tags:
+    - ios
+    - xcode
+    - macos

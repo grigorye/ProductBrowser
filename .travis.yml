@@ -1,0 +1,10 @@
+osx_image: xcode9.3
+language: objective-c
+script:
+- set -o pipefail && xcodebuild -sdk iphonesimulator -workspace ProductBrowser.xcworkspace -scheme ProductBrowserApp -destination 'platform=iOS Simulator,name=iPhone X,OS=11.3' -enableCodeCoverage YES test | xcpretty
+before_install:
+- bundle install
+- bundle exec pod repo update
+before_script:
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

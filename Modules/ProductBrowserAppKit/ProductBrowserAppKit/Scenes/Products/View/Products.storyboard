@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kf7-QH-Nz3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Products View Controller-->
+        <scene sceneID="T1A-u0-kaJ">
+            <objects>
+                <viewController id="Kf7-QH-Nz3" customClass="ProductsViewController" customModule="ProductBrowserAppKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bcy-Rc-TC3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PI6-0F-zMq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gFW-7P-20t" userLabel="Header">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="IOv-e2-Apj"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="kX4-ef-Mhj" kind="embed" id="QEC-1W-C8z"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZA-6K-EUP" userLabel="List">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="447"/>
+                                        <connections>
+                                            <segue destination="Nj5-S0-mqq" kind="embed" identifier="productList" id="cIB-T2-Sns"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AKO-hn-zDp" firstAttribute="bottom" secondItem="PI6-0F-zMq" secondAttribute="bottom" id="04v-PP-cO2"/>
+                            <constraint firstItem="PI6-0F-zMq" firstAttribute="trailing" secondItem="AKO-hn-zDp" secondAttribute="trailing" id="98W-SY-RDA"/>
+                            <constraint firstItem="PI6-0F-zMq" firstAttribute="top" secondItem="AKO-hn-zDp" secondAttribute="top" id="OqX-2a-gD5"/>
+                            <constraint firstItem="PI6-0F-zMq" firstAttribute="leading" secondItem="AKO-hn-zDp" secondAttribute="leading" id="dtB-ya-BRD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AKO-hn-zDp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xgx-vX-5o8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yhQ-fm-Vd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="114.69265367316342"/>
+        </scene>
+        <!--ProductListHeader-->
+        <scene sceneID="6k1-tD-ALW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProductListHeader" id="kX4-ef-Mhj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8h-MN-Pom" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="578"/>
+        </scene>
+        <!--ProductList-->
+        <scene sceneID="H4F-h4-d0I">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProductList" id="Nj5-S0-mqq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1u-Gi-coV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="115"/>
+        </scene>
+    </scenes>
+</document>
