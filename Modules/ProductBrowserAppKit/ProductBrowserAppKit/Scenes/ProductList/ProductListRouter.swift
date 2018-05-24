@@ -32,16 +32,17 @@ struct ProductListRouterImp : ProductListRouter {
         let navigationController = viewController.navigationController!
         
         if !UserDefaults.standard.bool(forKey: "ForceStandardDetailTransitioning") {
-            prepareCustomTransitioning(via: navigationController, for: productIdentifier)
-            detailViewController.hero.isEnabled = true
+            prepareCustomTransitioning(via: navigationController, for: productIdentifier, to: detailViewController)
         }
         
         navigationController.pushViewController(detailViewController, animated: true)
     }
     
-    func prepareCustomTransitioning(via navigationController: UINavigationController, for productIdentifier: ProductIdentifier) {
+    func prepareCustomTransitioning(via navigationController: UINavigationController, for productIdentifier: ProductIdentifier, to detailViewController: UIViewController) {
         
+        detailViewController.hero.isEnabled = true
         navigationController.hero.isEnabled = true
+        navigationController.hero.navigationAnimationType = .fade
     }
 
     // MARK: -
