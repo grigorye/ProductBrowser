@@ -2,7 +2,7 @@
 [![](https://codecov.io/gh/grigorye/ProductBrowser/branch/master/graph/badge.svg)](https://codecov.io/gh/grigorye/ProductBrowser)
 [![](https://gitlab.com/grigorye/ProductBrowser/badges/master/pipeline.svg)](https://gitlab.com/grigorye/ProductBrowser/commits/master)
 
-My another attempt to build an app utilizing clean architecture approaches and modern tools.
+My another attempt to build an app utilizing clean architecture approaches and modern tools. [Previous attempt](https://github.com/grigorye/Weather)
 
 # Post Checkout
 
