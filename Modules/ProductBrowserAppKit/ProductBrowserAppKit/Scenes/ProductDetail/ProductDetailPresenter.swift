@@ -6,23 +6,38 @@
 //  Copyright © 2018 Grigory Entin. All rights reserved.
 //
 
+import UIKit
+
 protocol ProductDetailPresenter : AnyObject {
     
-    init(productIdentifier: ProductIdentifier)
+    func loadContent()
 }
 
 class ProductDetailPresenterImp : ProductDetailPresenter {
     
-    // MARK: - <ProductDetailPresenter>
+    let view: ProductDetailView
+    let productIdentifier: ProductIdentifier
+    let interactor: ProductDetailInteractor
 
-    required init(productIdentifier: ProductIdentifier) {
-        
+    init(view: ProductDetailView, productIdentifier: ProductIdentifier, interactor: ProductDetailInteractor) {
+        self.view = view
         self.productIdentifier = productIdentifier
+        self.interactor = interactor
+    }
+    
+    // MARK: - <ProductDetailPresenter>
+    
+    func loadContent() {
+        
+        let product = interactor.product(with: productIdentifier)
+        view.model = ProductDetailViewModel(
+            imageURL: product.imageURL,
+            titleText: product.name,
+            detailText: try! .init(data: product.description.data(using: .unicode)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
+        )
     }
     
     // MARK: -
-    
-    let productIdentifier: ProductIdentifier
     
     deinit {()}
 }

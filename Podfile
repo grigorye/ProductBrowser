@@ -4,12 +4,17 @@ platform :ios, '10.0'
 use_frameworks!
 
 def shared_non_test_pods
-  pod 'Result'
+  pod 'Result', '~> 3.0'
   pod 'Swinject', '~> 2.4.0'
   pod 'SwinjectStoryboard', '~> 2.0.0-beta.1'
   pod 'Then', '~> 2.3.0'
   pod 'SwiftLint', '~> 0.25.1'
   pod 'RxSwift', '~> 4.1.2'
+  pod 'RxDataSources'
+  pod 'RxCocoa'
+  pod 'RxCoreData'
+  pod 'Moya'
+  pod 'SDWebImage', '~> 4.3.3'
 end
 
 def all_test_pods

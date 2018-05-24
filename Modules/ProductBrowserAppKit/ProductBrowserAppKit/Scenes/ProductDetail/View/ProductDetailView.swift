@@ -15,7 +15,7 @@ protocol ProductDetailView : View {
 
 struct ProductDetailViewModel {
     
-    let image: UIImage
+    let imageURL: URL?
     let titleText: String
-    let detailText: String
+    let detailText: NSAttributedString
 }

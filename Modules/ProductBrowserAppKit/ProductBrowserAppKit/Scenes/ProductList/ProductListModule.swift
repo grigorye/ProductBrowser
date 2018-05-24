@@ -10,5 +10,5 @@ import UIKit.UIViewController
 
 protocol ProductListModule {
     
-    func newViewController() -> UIViewController
+    //func newViewController() -> UIViewController
 }

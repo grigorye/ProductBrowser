@@ -6,7 +6,7 @@
 //  Copyright © 2018 Grigory Entin. All rights reserved.
 //
 
-public struct ProductIdentifier : ExpressibleByStringLiteral {
+public struct ProductIdentifier : ExpressibleByStringLiteral, Codable, Equatable {
     
     public typealias StringLiteralType = String
     

@@ -7,24 +7,15 @@
 //
 
 import UIKit
+import RxSwift
 
 protocol ProductListView : View {
     
     var delegate: ProductListViewDelegate! { get set }
-}
-
-struct ProductListViewModel {
-    
-    let items: [Item]
-    
-    struct Item {
-        
-        let image: UIImage
-        let title: String
-    }
+    var itemViewModels: Observable<[ProductListItemViewModel]>! { get set }
 }
 
 protocol ProductListViewDelegate : AnyObject {
     
-    func didSelectItem(at index: Int)
+    func selected(_: ProductListItemViewModel)
 }

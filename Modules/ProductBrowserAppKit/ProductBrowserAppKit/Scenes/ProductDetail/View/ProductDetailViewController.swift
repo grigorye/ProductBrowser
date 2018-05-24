@@ -6,6 +6,7 @@
 //  Copyright © 2018 Grigory Entin. All rights reserved.
 //
 
+import SDWebImage
 import UIKit
 
 class ProductDetailViewController : UIViewController, ProductDetailView {
@@ -14,8 +15,16 @@ class ProductDetailViewController : UIViewController, ProductDetailView {
     
     var model: ProductDetailViewModel! {
         didSet {
-            
+            configureView()
         }
+    }
+    
+    // MARK: -
+    
+    func configureView() {
+        imageView.sd_setImage(with: model.imageURL)
+        titleLabel.text = model.titleText
+        detailLabel.attributedText = model.detailText
     }
     
     // MARK: -
@@ -26,4 +35,18 @@ class ProductDetailViewController : UIViewController, ProductDetailView {
     }
     
     @IBOutlet private var _imageView: UIImageView!
+    
+    var titleLabel: UILabel {
+        _ = view
+        return _titleLabel
+    }
+    
+    @IBOutlet var _titleLabel: UILabel!
+
+    var detailLabel: UILabel {
+        _ = view
+        return _detailLabel
+    }
+    
+    @IBOutlet var _detailLabel: UILabel!
 }
