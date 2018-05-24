@@ -80,6 +80,7 @@
 		C4EFF6D920B6775900DE4257 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EFF6D220B66F0900DE4257 /* ProductListCell.xib */; };
 		C4EFF6DB20B67EC300DE4257 /* ProductDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF6DA20B67EC300DE4257 /* ProductDetailInteractor.swift */; };
 		C4EFF6DD20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF6DC20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift */; };
+		C4EFF6E320B6D8B500DE4257 /* AspectFitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF6E220B6D8B500DE4257 /* AspectFitImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +173,7 @@
 		C4EFF6D720B672B600DE4257 /* ProductListPresenter+ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListPresenter+ItemViewModel.swift"; sourceTree = "<group>"; };
 		C4EFF6DA20B67EC300DE4257 /* ProductDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInteractor.swift; sourceTree = "<group>"; };
 		C4EFF6DC20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductDetailModuleImp+Services.swift"; sourceTree = "<group>"; };
+		C4EFF6E220B6D8B500DE4257 /* AspectFitImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectFitImageView.swift; sourceTree = "<group>"; };
 		D8CEA8FEF0303EB7D2515F19 /* Pods-ProductBrowserAppKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductBrowserAppKitTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ProductBrowserAppKitTests/Pods-ProductBrowserAppKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -410,6 +412,7 @@
 				C4EFF6AA20B5822900DE4257 /* NSPersistentContainer+DestroyingStoreOnMigrationError.swift */,
 				C48FE72820B39672009094C9 /* VIPERModule.swift */,
 				C48FE72A20B3968B009094C9 /* CurrentBundle.swift */,
+				C4EFF6E220B6D8B500DE4257 /* AspectFitImageView.swift */,
 			);
 			name = Shared;
 			path = ../Shared;
@@ -749,6 +752,7 @@
 				C46C5D2F20B51B1E000254C0 /* ProductDetailModuleDefaultContainer.swift in Sources */,
 				C4EFF6D420B66F7700DE4257 /* ProductListItemView.swift in Sources */,
 				C4EFF6C820B5A5D000DE4257 /* NetworkingError.swift in Sources */,
+				C4EFF6E320B6D8B500DE4257 /* AspectFitImageView.swift in Sources */,
 				C4EFF6AD20B5897E00DE4257 /* ProductListInteractor.swift in Sources */,
 				C4EFF6C220B5A5C200DE4257 /* ProductsRefresherImp.swift in Sources */,
 				C48FE74A20B3B416009094C9 /* AssociatedObjects.swift in Sources */,
