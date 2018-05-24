@@ -11,7 +11,9 @@ extension ProductListItemViewModel {
     init(_ product: Product) {
         self.identifier = product.name // !!!
         
+        self.iconHeroID = "productImage-\(product.identifier)"
         self.iconURL = product.imageURL
+        self.titleHeroID = "productTitle-\(product.identifier)"
         self.title = product.name
         self.userInfo = product
     }

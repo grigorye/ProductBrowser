@@ -15,7 +15,9 @@ protocol ProductListItemView : class {
 
 struct ProductListItemViewModel {
     
+    let titleHeroID: String
     let title: String
+    let iconHeroID: String
     let iconURL: URL?
 
     let identifier: String

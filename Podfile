@@ -15,6 +15,7 @@ def shared_non_test_pods
   pod 'RxCoreData'
   pod 'Moya'
   pod 'SDWebImage', '~> 4.3.3'
+  pod 'Hero', '~> 1.2.0'
 end
 
 def all_test_pods

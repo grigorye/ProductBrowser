@@ -22,7 +22,9 @@ class ProductDetailViewController : UIViewController, ProductDetailView {
     // MARK: -
     
     func configureView() {
+        imageView.hero.id = model.imageHeroID
         imageView.sd_setImage(with: model.imageURL)
+        titleLabel.hero.id = model.titleHeroID
         titleLabel.text = model.titleText
         detailLabel.attributedText = model.detailText
     }

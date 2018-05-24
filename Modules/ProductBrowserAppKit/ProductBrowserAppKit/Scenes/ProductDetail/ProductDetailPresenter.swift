@@ -31,7 +31,9 @@ class ProductDetailPresenterImp : ProductDetailPresenter {
         
         let product = interactor.product(with: productIdentifier)
         view.model = ProductDetailViewModel(
+            imageHeroID: "productImage-\(productIdentifier)",
             imageURL: product.imageURL,
+            titleHeroID: "productTitle-\(productIdentifier)",
             titleText: product.name,
             detailText: try! .init(data: product.description.data(using: .unicode)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
         )

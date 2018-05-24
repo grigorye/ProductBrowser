@@ -6,6 +6,7 @@
 //  Copyright © 2018 Grigory Entin. All rights reserved.
 //
 
+import Hero
 import Swinject
 import UIKit
 
@@ -21,11 +22,30 @@ struct ProductListRouterImp : ProductListRouter {
     func routeToDetail(forProduct productIdentifier: ProductIdentifier) {
         
         let detailViewController = newProductDetailViewController(productIdentifier: productIdentifier, container: container)
-        viewController.navigationController!.pushViewController(detailViewController, animated: true)
+        present(detailViewController, for: productIdentifier)
     }
 
     // MARK: -
     
-    let viewController: UIViewController & ProductListView
+    func present(_ detailViewController: UIViewController, for productIdentifier: ProductIdentifier) {
+        
+        let navigationController = viewController.navigationController!
+        
+        if !UserDefaults.standard.bool(forKey: "ForceStandardDetailTransitioning") {
+            prepareCustomTransitioning(via: navigationController, for: productIdentifier)
+            detailViewController.hero.isEnabled = true
+        }
+        
+        navigationController.pushViewController(detailViewController, animated: true)
+    }
+    
+    func prepareCustomTransitioning(via navigationController: UINavigationController, for productIdentifier: ProductIdentifier) {
+        
+        navigationController.hero.isEnabled = true
+    }
+
+    // MARK: -
+    
+    let viewController: UIViewController
     let container: Container
 }

@@ -8,6 +8,7 @@
 
 import RxSwift
 import SDWebImage
+import Hero
 import UIKit
 
 class ProductListCell : UITableViewCell, ProductListItemView {
@@ -17,8 +18,10 @@ class ProductListCell : UITableViewCell, ProductListItemView {
     var modelDisposeBag: DisposeBag!
     var model: ProductListItemViewModel! {
         didSet {
+            iconView.hero.id = model.iconHeroID
             iconView.sd_cancelCurrentAnimationImagesLoad()
             iconView.sd_setImage(with: model.iconURL)
+            titleLabel.hero.id = model.titleHeroID
             titleLabel.text = model.title
         }
     }
@@ -28,7 +31,9 @@ class ProductListCell : UITableViewCell, ProductListItemView {
     override func prepareForReuse() {
         super.prepareForReuse()
         
+        iconView.hero.id = nil
         iconView.sd_cancelCurrentAnimationImagesLoad()
+        titleLabel.hero.id = nil
     }
     
     // MARK: -
