@@ -53,6 +53,16 @@ class ProductListHeaderPresenterImp : ProductListHeaderPresenter {
                 )
             })
             .disposed(by: disposeBag)
+        
+        interactor.productsCountObservable
+            .subscribe(onNext: { [view] (productsCount) in
+                let text = String(format: NSLocalizedString("%d products", comment: ""), productsCount)
+                view.model = ProductListHeaderViewModel(
+                    totalProductsText: text,
+                    lastUpdatedText: view.model?.lastUpdatedText ?? ""
+                )
+            })
+            .disposed(by: disposeBag)
     }
     
     // MARK: -
