@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -19,7 +20,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="495" height="74.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1jY-l2-ms3">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1jY-l2-ms3">
                         <rect key="frame" x="20" y="11" width="53" height="53"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="1jY-l2-ms3" secondAttribute="height" multiplier="1:1" id="1jU-zH-Qd5"/>
@@ -34,7 +35,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="1jY-l2-ms3" firstAttribute="top" secondItem="IEq-fN-9vI" secondAttribute="topMargin" id="6jb-uN-VfU"/>
-                    <constraint firstItem="6RY-mb-506" firstAttribute="leading" secondItem="1jY-l2-ms3" secondAttribute="trailing" constant="8" id="FBh-2T-pfF"/>
+                    <constraint firstItem="6RY-mb-506" firstAttribute="leading" secondItem="1jY-l2-ms3" secondAttribute="trailing" constant="8" symbolic="YES" id="FBh-2T-pfF"/>
                     <constraint firstItem="6RY-mb-506" firstAttribute="trailing" secondItem="IEq-fN-9vI" secondAttribute="trailingMargin" id="eup-ec-yR3"/>
                     <constraint firstItem="6RY-mb-506" firstAttribute="centerY" secondItem="1jY-l2-ms3" secondAttribute="centerY" id="iGu-et-GRw"/>
                     <constraint firstItem="1jY-l2-ms3" firstAttribute="leading" secondItem="IEq-fN-9vI" secondAttribute="leadingMargin" id="mcE-ob-ebL"/>
