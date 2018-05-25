@@ -108,6 +108,7 @@
 		B557D16729888E3230CFE6C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C48FE72120B39549009094C9 /* ProductBrowserAppKit.framework */,
 				0E1544026BA6D42D74AB5BA1 /* Pods_ProductBrowserApp.framework */,
 				9733FFE2A00D20B9196B0D06 /* Pods_ProductBrowserAppTests.framework */,
 				BFF5A800FC4801F60A8D1945 /* Pods_ProductBrowserAppUITests.framework */,
@@ -131,7 +132,6 @@
 		C48FE6AB20B38D5D009094C9 = {
 			isa = PBXGroup;
 			children = (
-				C48FE72120B39549009094C9 /* ProductBrowserAppKit.framework */,
 				C48FE6B620B38D5D009094C9 /* ProductBrowserApp */,
 				C48FE6CB20B38D60009094C9 /* ProductBrowserAppTests */,
 				C48FE6D620B38D60009094C9 /* ProductBrowserAppUITests */,
