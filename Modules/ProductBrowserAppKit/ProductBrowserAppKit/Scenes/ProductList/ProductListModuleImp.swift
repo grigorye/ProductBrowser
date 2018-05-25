@@ -44,7 +44,9 @@ class ProductListModuleImp : ViewModule, ProductListModule {
             return InteractorImp(
                 productsKeeper: r.resolve(ProductsKeeper.self)!,
                 productsProvider: r.resolve(ProductsProvider.self)!,
-                productsRefresher: r.resolve(ProductsRefresher.self)!
+                productsRefresher: r.resolve(ProductsRefresher.self)!,
+                repeatingOnlineEventTrigger: r.resolve(RepeatingOnlineEventTrigger.self)!,
+                refreshInterval: 5
             )
         }
         

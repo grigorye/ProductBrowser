@@ -32,6 +32,16 @@ class ProductListViewController : UITableViewController, ProductListView {
         tableView.register(UINib(nibName: "ProductListCell", bundle: .current), forCellReuseIdentifier: "ProductListCell")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        delegate.viewWillAppear()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        delegate.viewDidDisappear()
+    }
+    
     private let disposeBag = DisposeBag()
 
     func configureView() {

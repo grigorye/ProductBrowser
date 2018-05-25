@@ -18,7 +18,10 @@ protocol ProductListInteractor {
     var observableProducts: Observable<[Product]> { get }
     
     func clearRefreshing()
-    func refreshProductsAsNecessary()
+    func refreshAsNecessary()
+    
+    func startPeriodicRefreshing()
+    func stopPeriodicRefreshing()
 }
 
 class ProductListInteractorImp : ProductListInteractor {
@@ -26,18 +29,19 @@ class ProductListInteractorImp : ProductListInteractor {
     let productsKeeper: ProductsKeeper
     let productsProvider: ProductsProvider
     let productsRefresher: ProductsRefresher
+    let repeatingOnlineEventTrigger: RepeatingOnlineEventTrigger
+    let refreshInterval: TimeInterval
     
     deinit {()}
     
-    init(productsKeeper: ProductsKeeper, productsProvider: ProductsProvider, productsRefresher: ProductsRefresher) {
+    init(productsKeeper: ProductsKeeper, productsProvider: ProductsProvider, productsRefresher: ProductsRefresher, repeatingOnlineEventTrigger: RepeatingOnlineEventTrigger, refreshInterval: TimeInterval) {
         
         self.productsKeeper = productsKeeper
         self.productsProvider = productsProvider
         self.productsRefresher = productsRefresher
+        self.repeatingOnlineEventTrigger = repeatingOnlineEventTrigger
+        self.refreshInterval = refreshInterval
     }
-}
-
-extension ProductListInteractorImp {
     
     // MARK: - <ProductListInteractor>
     
@@ -48,7 +52,22 @@ extension ProductListInteractorImp {
     func clearRefreshing() {
         productsRefresher.clearRefreshing()
     }
-    func refreshProductsAsNecessary() {
+    
+    func refreshAsNecessary() {
         productsRefresher.refreshProductsAsNecessary()
+    }
+    
+    var periodicRefreshToken: AnyObject!
+    
+    func startPeriodicRefreshing() {
+        
+        self.periodicRefreshToken = repeatingOnlineEventTrigger.whenOnlineWithPeriod(of: refreshInterval) { [productsRefresher] in
+            
+            productsRefresher.refreshProductsAsNecessary()
+        }
+    }
+    
+    func stopPeriodicRefreshing() {
+        self.periodicRefreshToken = nil
     }
 }

@@ -16,6 +16,7 @@ def shared_non_test_pods
   pod 'Moya'
   pod 'SDWebImage', '~> 4.3.3'
   pod 'Hero', '~> 1.2.0'
+  pod 'ReachabilitySwift', '~> 4.1.0'
 end
 
 def all_test_pods

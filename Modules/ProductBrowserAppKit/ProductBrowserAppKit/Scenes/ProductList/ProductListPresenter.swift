@@ -22,7 +22,7 @@ class ProductListPresenterImp : ProductListPresenter {
         view.itemViewModels = interactor.observableProducts.map { (products) in
             return products.map { ProductListItemViewModel($0) }
         }.debug()
-        interactor.refreshProductsAsNecessary()
+        interactor.refreshAsNecessary()
     }
 
     // MARK: - <ProductListViewDelegate>
@@ -31,6 +31,14 @@ class ProductListPresenterImp : ProductListPresenter {
         router.routeToDetail(forProduct: viewModel.product.identifier)
     }
 
+    func viewWillAppear() {
+        interactor.startPeriodicRefreshing()
+    }
+    
+    func viewDidDisappear() {
+        interactor.stopPeriodicRefreshing()
+    }
+    
     // MARK: -
     
     let disposeBag = DisposeBag()

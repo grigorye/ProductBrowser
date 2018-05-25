@@ -17,5 +17,7 @@ protocol ProductListView : View {
 
 protocol ProductListViewDelegate : AnyObject {
     
+    func viewWillAppear()
+    func viewDidDisappear()
     func selected(_: ProductListItemViewModel)
 }

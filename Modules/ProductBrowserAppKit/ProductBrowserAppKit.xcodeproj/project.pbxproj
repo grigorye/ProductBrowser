@@ -13,6 +13,10 @@
 		C41F2C6E20B556300012A09F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F2C6D20B556300012A09F /* Product.swift */; };
 		C43E98F220B4FA9000784539 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E98F120B4FA9000784539 /* ProductsView.swift */; };
 		C43E98F420B4FB2100784539 /* ProductsModuleImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E98F320B4FB2100784539 /* ProductsModuleImp.swift */; };
+		C44B717920B7BE2800EB8CC1 /* RepeatingOnlineEventTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B717820B7BE2800EB8CC1 /* RepeatingOnlineEventTrigger.swift */; };
+		C44B717C20B7BF1A00EB8CC1 /* RepeatingOnlineEventTriggerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B717B20B7BF1A00EB8CC1 /* RepeatingOnlineEventTriggerImp.swift */; };
+		C44B717F20B7CD7B00EB8CC1 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B717E20B7CD7B00EB8CC1 /* ReachabilityService.swift */; };
+		C44B718120B7CFC500EB8CC1 /* ReachabilityService-Imports.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B718020B7CFC500EB8CC1 /* ReachabilityService-Imports.swift */; };
 		C46C5D1E20B4FC49000254C0 /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D1D20B4FC49000254C0 /* MainModule.swift */; };
 		C46C5D2120B509E2000254C0 /* ProductListHeaderModuleImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D2020B509E2000254C0 /* ProductListHeaderModuleImp.swift */; };
 		C46C5D2320B50A25000254C0 /* ProductListHeaderModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D2220B50A24000254C0 /* ProductListHeaderModule.swift */; };
@@ -103,6 +107,10 @@
 		C41F2C6D20B556300012A09F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C43E98F120B4FA9000784539 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		C43E98F320B4FB2100784539 /* ProductsModuleImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModuleImp.swift; sourceTree = "<group>"; };
+		C44B717820B7BE2800EB8CC1 /* RepeatingOnlineEventTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingOnlineEventTrigger.swift; sourceTree = "<group>"; };
+		C44B717B20B7BF1A00EB8CC1 /* RepeatingOnlineEventTriggerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingOnlineEventTriggerImp.swift; sourceTree = "<group>"; };
+		C44B717E20B7CD7B00EB8CC1 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		C44B718020B7CFC500EB8CC1 /* ReachabilityService-Imports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReachabilityService-Imports.swift"; sourceTree = "<group>"; };
 		C46C5D1D20B4FC49000254C0 /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
 		C46C5D2020B509E2000254C0 /* ProductListHeaderModuleImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListHeaderModuleImp.swift; sourceTree = "<group>"; };
 		C46C5D2220B50A24000254C0 /* ProductListHeaderModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListHeaderModule.swift; sourceTree = "<group>"; };
@@ -214,6 +222,8 @@
 				C4EFF6B020B5963500DE4257 /* ProductsProvider */,
 				C4EFF6BE20B5A33E00DE4257 /* ProductsNetworking */,
 				C4EFF6BF20B5A35300DE4257 /* ProductsRefreshing */,
+				C44B717A20B7BEF500EB8CC1 /* RepeatingOnlineEventTrigger */,
+				C44B718220B7CFFA00EB8CC1 /* ReachabilityService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -225,6 +235,24 @@
 				C4EFF6A020B57B0400DE4257 /* CoreDataImp */,
 			);
 			path = ProductsKeeper;
+			sourceTree = "<group>";
+		};
+		C44B717A20B7BEF500EB8CC1 /* RepeatingOnlineEventTrigger */ = {
+			isa = PBXGroup;
+			children = (
+				C44B717820B7BE2800EB8CC1 /* RepeatingOnlineEventTrigger.swift */,
+				C44B717B20B7BF1A00EB8CC1 /* RepeatingOnlineEventTriggerImp.swift */,
+			);
+			path = RepeatingOnlineEventTrigger;
+			sourceTree = "<group>";
+		};
+		C44B718220B7CFFA00EB8CC1 /* ReachabilityService */ = {
+			isa = PBXGroup;
+			children = (
+				C44B718020B7CFC500EB8CC1 /* ReachabilityService-Imports.swift */,
+				C44B717E20B7CD7B00EB8CC1 /* ReachabilityService.swift */,
+			);
+			path = ReachabilityService;
 			sourceTree = "<group>";
 		};
 		C46C5D1F20B5093A000254C0 /* Entities */ = {
@@ -622,6 +650,7 @@
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCoreData/RxCoreData.framework",
@@ -640,6 +669,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCoreData.framework",
@@ -727,15 +757,19 @@
 				C48FE72B20B3968B009094C9 /* CurrentBundle.swift in Sources */,
 				C43E98F420B4FB2100784539 /* ProductsModuleImp.swift in Sources */,
 				C48FE74420B3AD5C009094C9 /* ProductListModuleImp.swift in Sources */,
+				C44B717F20B7CD7B00EB8CC1 /* ReachabilityService.swift in Sources */,
+				C44B717C20B7BF1A00EB8CC1 /* RepeatingOnlineEventTriggerImp.swift in Sources */,
 				C4EFF6D820B672B600DE4257 /* ProductListPresenter+ItemViewModel.swift in Sources */,
 				C4EFF6C920B5A5D000DE4257 /* ProductsNetworkingQueryResult.swift in Sources */,
 				C48FE74020B3A8E7009094C9 /* ProductDetailViewController.swift in Sources */,
+				C44B717920B7BE2800EB8CC1 /* RepeatingOnlineEventTrigger.swift in Sources */,
 				C48FE73220B39CD6009094C9 /* ProductListHeaderViewController.swift in Sources */,
 				C41F2C6A20B555BD0012A09F /* ProductsKeeper.swift in Sources */,
 				C48FE74220B3A91F009094C9 /* ProductDetailView.swift in Sources */,
 				C4EFF6DD20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift in Sources */,
 				C4EFF6C620B5A5D000DE4257 /* MoyaResponse+NetworkingError.swift in Sources */,
 				C4EFF6AB20B5822900DE4257 /* NSPersistentContainer+DestroyingStoreOnMigrationError.swift in Sources */,
+				C44B718120B7CFC500EB8CC1 /* ReachabilityService-Imports.swift in Sources */,
 				C48FE74620B3B27F009094C9 /* ProductListPresenter.swift in Sources */,
 				C46C5D2320B50A25000254C0 /* ProductListHeaderModule.swift in Sources */,
 				C4EFF6AF20B5963100DE4257 /* ProductsProvider.swift in Sources */,

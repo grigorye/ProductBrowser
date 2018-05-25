@@ -33,5 +33,9 @@ extension ProductListModuleImp {
                 productsKeeper: container.resolve(ProductsKeeper.self)!
             )
         }
+        
+        container.register(RepeatingOnlineEventTrigger.self) { r in
+            return RepeatingOnlineEventTriggerImp()
+        }
     }
 }
