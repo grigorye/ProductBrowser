@@ -14,7 +14,7 @@ protocol MainModule {
     func newViewController() -> UIViewController
 }
 
-public func newMainViewController(container: Container? = nil) -> UIViewController {
+public func newMainViewController(container: Container? = sharedContainer) -> UIViewController {
     
     return mainModuleDefaultContainer(parent: container).resolve(MainModule.self)!.newViewController()
 }

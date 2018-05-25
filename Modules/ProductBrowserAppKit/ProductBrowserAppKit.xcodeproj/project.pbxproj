@@ -17,6 +17,8 @@
 		C44B717C20B7BF1A00EB8CC1 /* RepeatingOnlineEventTriggerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B717B20B7BF1A00EB8CC1 /* RepeatingOnlineEventTriggerImp.swift */; };
 		C44B717F20B7CD7B00EB8CC1 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B717E20B7CD7B00EB8CC1 /* ReachabilityService.swift */; };
 		C44B718120B7CFC500EB8CC1 /* ReachabilityService-Imports.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B718020B7CFC500EB8CC1 /* ReachabilityService-Imports.swift */; };
+		C46BA62720B7F33A0032C15D /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46BA62620B7F33A0032C15D /* ServicesAssembly.swift */; };
+		C46BA62920B7F3B90032C15D /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46BA62820B7F3B90032C15D /* Assembler.swift */; };
 		C46C5D1E20B4FC49000254C0 /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D1D20B4FC49000254C0 /* MainModule.swift */; };
 		C46C5D2120B509E2000254C0 /* ProductListHeaderModuleImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D2020B509E2000254C0 /* ProductListHeaderModuleImp.swift */; };
 		C46C5D2320B50A25000254C0 /* ProductListHeaderModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D2220B50A24000254C0 /* ProductListHeaderModule.swift */; };
@@ -26,7 +28,6 @@
 		C46C5D2D20B51527000254C0 /* ProductDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D2C20B51527000254C0 /* ProductDetailPresenter.swift */; };
 		C46C5D2F20B51B1E000254C0 /* ProductDetailModuleDefaultContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D2E20B51B1E000254C0 /* ProductDetailModuleDefaultContainer.swift */; };
 		C46C5D3220B5229E000254C0 /* ProductListShowDetailSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C5D3120B5229E000254C0 /* ProductListShowDetailSegue.swift */; };
-		C48E4F9820B5BFFC008131C2 /* ProductListModuleImp+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E4F9720B5BFFC008131C2 /* ProductListModuleImp+Services.swift */; };
 		C48FE6FB20B38EAA009094C9 /* ProductBrowserAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48FE6F120B38EA9009094C9 /* ProductBrowserAppKit.framework */; };
 		C48FE70020B38EAA009094C9 /* ProductBrowserAppKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FE6FF20B38EAA009094C9 /* ProductBrowserAppKitTests.swift */; };
 		C48FE70D20B38F17009094C9 /* ProductsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FE70C20B38F17009094C9 /* ProductsModule.swift */; };
@@ -83,8 +84,8 @@
 		C4EFF6D820B672B600DE4257 /* ProductListPresenter+ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF6D720B672B600DE4257 /* ProductListPresenter+ItemViewModel.swift */; };
 		C4EFF6D920B6775900DE4257 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EFF6D220B66F0900DE4257 /* ProductListCell.xib */; };
 		C4EFF6DB20B67EC300DE4257 /* ProductDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF6DA20B67EC300DE4257 /* ProductDetailInteractor.swift */; };
-		C4EFF6DD20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF6DC20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift */; };
 		C4EFF6E320B6D8B500DE4257 /* AspectFitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF6E220B6D8B500DE4257 /* AspectFitImageView.swift */; };
+		C4F96E3520B7E91D00D20C72 /* ProductListHeaderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F96E3420B7E91D00D20C72 /* ProductListHeaderInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		C44B717B20B7BF1A00EB8CC1 /* RepeatingOnlineEventTriggerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingOnlineEventTriggerImp.swift; sourceTree = "<group>"; };
 		C44B717E20B7CD7B00EB8CC1 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 		C44B718020B7CFC500EB8CC1 /* ReachabilityService-Imports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReachabilityService-Imports.swift"; sourceTree = "<group>"; };
+		C46BA62620B7F33A0032C15D /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		C46BA62820B7F3B90032C15D /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
 		C46C5D1D20B4FC49000254C0 /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
 		C46C5D2020B509E2000254C0 /* ProductListHeaderModuleImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListHeaderModuleImp.swift; sourceTree = "<group>"; };
 		C46C5D2220B50A24000254C0 /* ProductListHeaderModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListHeaderModule.swift; sourceTree = "<group>"; };
@@ -120,7 +123,6 @@
 		C46C5D2C20B51527000254C0 /* ProductDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailPresenter.swift; sourceTree = "<group>"; };
 		C46C5D2E20B51B1E000254C0 /* ProductDetailModuleDefaultContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailModuleDefaultContainer.swift; sourceTree = "<group>"; };
 		C46C5D3120B5229E000254C0 /* ProductListShowDetailSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListShowDetailSegue.swift; sourceTree = "<group>"; };
-		C48E4F9720B5BFFC008131C2 /* ProductListModuleImp+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListModuleImp+Services.swift"; sourceTree = "<group>"; };
 		C48FE6F120B38EA9009094C9 /* ProductBrowserAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProductBrowserAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48FE6F520B38EA9009094C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C48FE6FA20B38EAA009094C9 /* ProductBrowserAppKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductBrowserAppKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,8 +182,8 @@
 		C4EFF6D320B66F0900DE4257 /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
 		C4EFF6D720B672B600DE4257 /* ProductListPresenter+ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListPresenter+ItemViewModel.swift"; sourceTree = "<group>"; };
 		C4EFF6DA20B67EC300DE4257 /* ProductDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInteractor.swift; sourceTree = "<group>"; };
-		C4EFF6DC20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductDetailModuleImp+Services.swift"; sourceTree = "<group>"; };
 		C4EFF6E220B6D8B500DE4257 /* AspectFitImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectFitImageView.swift; sourceTree = "<group>"; };
+		C4F96E3420B7E91D00D20C72 /* ProductListHeaderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListHeaderInteractor.swift; sourceTree = "<group>"; };
 		D8CEA8FEF0303EB7D2515F19 /* Pods-ProductBrowserAppKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductBrowserAppKitTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ProductBrowserAppKitTests/Pods-ProductBrowserAppKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +226,8 @@
 				C4EFF6BF20B5A35300DE4257 /* ProductsRefreshing */,
 				C44B717A20B7BEF500EB8CC1 /* RepeatingOnlineEventTrigger */,
 				C44B718220B7CFFA00EB8CC1 /* ReachabilityService */,
+				C46BA62620B7F33A0032C15D /* ServicesAssembly.swift */,
+				C46BA62820B7F3B90032C15D /* Assembler.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -269,7 +273,6 @@
 			children = (
 				C48FE71220B39033009094C9 /* ProductListHeader.storyboard */,
 				C48FE73120B39CD6009094C9 /* ProductListHeaderViewController.swift */,
-				C48FE73320B39CFF009094C9 /* ProductListHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,6 +384,8 @@
 		C48FE71420B39045009094C9 /* ProductListHeader */ = {
 			isa = PBXGroup;
 			children = (
+				C48FE73320B39CFF009094C9 /* ProductListHeaderView.swift */,
+				C4F96E3420B7E91D00D20C72 /* ProductListHeaderInteractor.swift */,
 				C46C5D2420B50AA2000254C0 /* ProductListHeaderPresenter.swift */,
 				C46C5D2220B50A24000254C0 /* ProductListHeaderModule.swift */,
 				C46C5D2020B509E2000254C0 /* ProductListHeaderModuleImp.swift */,
@@ -398,7 +403,6 @@
 				C4EFF6AC20B5897E00DE4257 /* ProductListInteractor.swift */,
 				C48FE75120B4CB8E009094C9 /* ProductListModule.swift */,
 				C48FE74320B3AD5C009094C9 /* ProductListModuleImp.swift */,
-				C48E4F9720B5BFFC008131C2 /* ProductListModuleImp+Services.swift */,
 				C48FE73720B3A649009094C9 /* ProductListView.swift */,
 				C46C5D3320B522B0000254C0 /* View */,
 			);
@@ -424,7 +428,6 @@
 				C4EFF6DA20B67EC300DE4257 /* ProductDetailInteractor.swift */,
 				C46C5D2720B514E6000254C0 /* ProductDetailModule.swift */,
 				C46C5D2820B514E6000254C0 /* ProductDetailModuleImp.swift */,
-				C4EFF6DC20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift */,
 				C46C5D2B20B514EE000254C0 /* View */,
 			);
 			path = ProductDetail;
@@ -734,14 +737,15 @@
 				C4EFF6C720B5A5D000DE4257 /* ProductsMoyaTarget.swift in Sources */,
 				C4EFF6D520B66F7700DE4257 /* ProductListItemView+Differentiator.swift in Sources */,
 				C48FE73C20B3A7B0009094C9 /* ProductIdentifier.swift in Sources */,
+				C4F96E3520B7E91D00D20C72 /* ProductListHeaderInteractor.swift in Sources */,
 				C48FE73020B3994C009094C9 /* MainModuleImp.swift in Sources */,
-				C48E4F9820B5BFFC008131C2 /* ProductListModuleImp+Services.swift in Sources */,
 				C4EFF6A220B57D7C00DE4257 /* Products.xcdatamodeld in Sources */,
 				C4EFF69F20B57AFE00DE4257 /* Product+Persistable.swift in Sources */,
 				C4EFF6A920B581F300DE4257 /* NSBundle+ManagedObjectModel.swift in Sources */,
 				C4EFF6CA20B5A5D000DE4257 /* ProductsNetworking.swift in Sources */,
 				C41F2C6E20B556300012A09F /* Product.swift in Sources */,
 				C4EFF6CD20B5A67F00DE4257 /* ProductsNetworkingResponse.swift in Sources */,
+				C46BA62920B7F3B90032C15D /* Assembler.swift in Sources */,
 				C48FE74820B3B383009094C9 /* NSObject+RetainedObjects.swift in Sources */,
 				C4EFF6C420B5A5D000DE4257 /* MoyaProductsNetworking.swift in Sources */,
 				C48FE73620B3A623009094C9 /* ProductListViewController.swift in Sources */,
@@ -766,7 +770,6 @@
 				C48FE73220B39CD6009094C9 /* ProductListHeaderViewController.swift in Sources */,
 				C41F2C6A20B555BD0012A09F /* ProductsKeeper.swift in Sources */,
 				C48FE74220B3A91F009094C9 /* ProductDetailView.swift in Sources */,
-				C4EFF6DD20B67FEC00DE4257 /* ProductDetailModuleImp+Services.swift in Sources */,
 				C4EFF6C620B5A5D000DE4257 /* MoyaResponse+NetworkingError.swift in Sources */,
 				C4EFF6AB20B5822900DE4257 /* NSPersistentContainer+DestroyingStoreOnMigrationError.swift in Sources */,
 				C44B718120B7CFC500EB8CC1 /* ReachabilityService-Imports.swift in Sources */,
@@ -787,6 +790,7 @@
 				C4EFF6D420B66F7700DE4257 /* ProductListItemView.swift in Sources */,
 				C4EFF6C820B5A5D000DE4257 /* NetworkingError.swift in Sources */,
 				C4EFF6E320B6D8B500DE4257 /* AspectFitImageView.swift in Sources */,
+				C46BA62720B7F33A0032C15D /* ServicesAssembly.swift in Sources */,
 				C4EFF6AD20B5897E00DE4257 /* ProductListInteractor.swift in Sources */,
 				C4EFF6C220B5A5C200DE4257 /* ProductsRefresherImp.swift in Sources */,
 				C48FE74A20B3B416009094C9 /* AssociatedObjects.swift in Sources */,

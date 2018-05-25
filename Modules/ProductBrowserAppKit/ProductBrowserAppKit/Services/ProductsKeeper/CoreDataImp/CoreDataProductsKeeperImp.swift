@@ -13,9 +13,21 @@ import CoreData
 
 class CoreDataProductsKeeper : ProductsKeeper {
     
-    var lastUpdated: Date?
+    var lastUpdated: Date? {
+        set {
+            lastUpdatedBehaviorSubject.onNext(newValue)
+        }
+        get {
+            return try! lastUpdatedBehaviorSubject.value()
+        }
+    }
+    var lastUpdatedBehaviorSubject = BehaviorSubject<Date?>(value: nil)
+    var lastUpdatedObservable: Observable<Date?> {
+        return lastUpdatedBehaviorSubject
+    }
+
     var lastError: Error?
-    
+
     let sortDescriptors = [
         NSSortDescriptor(key: #keyPath(PersistentProduct.dateAdded), ascending: true)
     ]

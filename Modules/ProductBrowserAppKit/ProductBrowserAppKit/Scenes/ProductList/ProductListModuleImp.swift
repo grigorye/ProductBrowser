@@ -30,8 +30,6 @@ class ProductListModuleImp : ViewModule, ProductListModule {
         let container = Container(parent: parentContainer)
         self.container = container
 
-        registerServices(in: container)
-        
         container.register(Presenter.self) { r in
             return PresenterImp(
                 view: r.resolve(View.self)!,

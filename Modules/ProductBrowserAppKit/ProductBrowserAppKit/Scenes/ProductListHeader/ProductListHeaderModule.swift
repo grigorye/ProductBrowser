@@ -8,7 +8,4 @@
 
 import UIKit
 
-protocol ProductListHeaderModule {
-    
-    func newViewController() -> UIViewController
-}
+protocol ProductListHeaderModule {}

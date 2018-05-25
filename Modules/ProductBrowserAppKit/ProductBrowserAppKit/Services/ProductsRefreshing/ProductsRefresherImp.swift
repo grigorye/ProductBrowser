@@ -17,11 +17,19 @@ class ProductsRefresherImp : ProductsRefresher {
     func clearRefreshing() {
     }
     
+    var refreshInProgress = false
+    
     func refreshProductsAsNecessary() {
         
+        guard !refreshInProgress else {
+            return
+        }
+        
         let date = Date()
-        productsProvider.queryProducts() { [productsKeeper] (result) in
+        refreshInProgress = true
+        productsProvider.queryProducts() { [weak self, productsKeeper] (result) in
             DispatchQueue.main.async {
+                defer { self?.refreshInProgress = false }
                 switch result {
                 case .failure(let error):
                     productsKeeper.lastError = error

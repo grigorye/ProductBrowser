@@ -12,6 +12,7 @@ protocol ProductsKeeper : class {
 
     var products: [Product] { get set }
     var lastUpdated: Date? { get set }
+    var lastUpdatedObservable: Observable<Date?> { get }
     var lastError: Error? { get set }
     
     var observableProducts: Observable<[Product]> { get }
